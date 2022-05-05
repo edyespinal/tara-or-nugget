@@ -1,15 +1,18 @@
 import React from 'react'
 
+import { MantineProvider } from '@mantine/core'
 import ReactDOM from 'react-dom/client'
+import { theme } from 'theme'
 
-import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
-    <App />
+    <MantineProvider theme={theme} withGlobalStyles withNormalizeCSS>
+      <App />
+    </MantineProvider>
   </React.StrictMode>
 )
 

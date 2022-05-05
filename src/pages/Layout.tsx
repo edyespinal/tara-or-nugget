@@ -5,7 +5,10 @@ import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
   return (
-    <Container size="lg">
+    <Container
+      size="lg"
+      style={{ height: '100vh', display: 'grid', placeItems: 'center' }}
+    >
       <Outlet />
     </Container>
   )
