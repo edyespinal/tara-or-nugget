@@ -9,9 +9,11 @@ const Layout = () => {
       fluid
       style={{
         backgroundColor: '#333438',
-        height: '100vh',
+        minHeight: '100vh',
         display: 'grid',
         placeItems: 'center',
+        paddingTop: '1rem',
+        paddingBottom: '2rem',
       }}
     >
       <Outlet />

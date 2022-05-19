@@ -90,7 +90,7 @@ const Captcha = () => {
             <p>(and not chicken nuggets)</p>
           </div>
           <div className={classes.img}>
-            <img src="/img/Tara.jpg" alt="Tara" />
+            <img src="/img/Tara.jpg" alt="Tara" height={146} width={146} />
           </div>
         </div>
         {/* Body */}

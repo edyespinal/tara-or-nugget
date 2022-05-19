@@ -1,7 +1,7 @@
 import { createStyles } from '@mantine/core'
 
 export const useStyles = createStyles(
-  ({ colors, white, shadows, spacing, radius }) => ({
+  ({ breakpoints, colors, white, shadows, spacing, radius }) => ({
     captcha: {
       backgroundColor: white,
       boxShadow: shadows.xl,
@@ -16,6 +16,12 @@ export const useStyles = createStyles(
       justifyContent: 'space-between',
       padding: spacing.xl,
 
+      [`@media (max-width: ${breakpoints.sm}px)`]: {
+        flexDirection: 'column',
+        lineHeight: 1.1,
+        padding: spacing.xs,
+      },
+
       p: {
         margin: 0,
       },
@@ -23,12 +29,14 @@ export const useStyles = createStyles(
         margin: '0.5rem 0 0',
       },
     },
+
     img: {
       border: `2px solid ${white}`,
+      height: '150px',
+      width: '150px',
 
-      img: {
-        height: '150px',
-        width: '150px',
+      [`@media (max-width: ${breakpoints.sm}px)`]: {
+        marginTop: '1rem',
       },
     },
 
@@ -37,7 +45,7 @@ export const useStyles = createStyles(
       display: 'flex',
       justifyContent: 'space-between',
       flexWrap: 'wrap',
-      width: '568px',
+      width: 'min(100%, 568px)',
       padding: '0.25rem 0 0.5rem',
     },
     captchaImg: {
@@ -46,12 +54,19 @@ export const useStyles = createStyles(
       img: {
         padding: '2px',
         transition: 'all ease-in-out 0.07s',
+        height: '186px',
+        width: '189px',
+
+        [`@media (max-width: ${breakpoints.sm}px)`]: {
+          width: '100%',
+        },
       },
     },
     checkmark: {
       display: 'block',
       position: 'absolute',
-      height: '25px',
+      height: '25px !important',
+      width: '25px !important',
     },
     imgSelected: {
       padding: '0.5rem !important',

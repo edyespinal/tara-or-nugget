@@ -28,8 +28,6 @@ const CaptchaImg = ({ route }: Props) => {
         className={`${isSelected && classes.imgSelected}`}
         src={route}
         alt="Verification"
-        height={186}
-        width={189}
       />
     </div>
   )
