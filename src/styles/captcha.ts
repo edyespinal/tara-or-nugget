@@ -46,10 +46,6 @@ export const useStyles = createStyles(
       gridTemplateColumns: 'repeat(3, 1fr)',
       width: 'min(100%, 568px)',
       padding: '0.25rem 0 0.5rem',
-
-      [`@media (max-width: ${breakpoints.sm}px)`]: {
-        gridTemplateColumns: 'repeat(2, 1fr)',
-      },
     },
     captchaImg: {
       position: 'relative',
@@ -57,7 +53,7 @@ export const useStyles = createStyles(
       img: {
         padding: '2px',
         transition: 'all ease-in-out 0.07s',
-        height: '186px',
+        height: 'auto',
         width: '189px',
 
         [`@media (max-width: ${breakpoints.sm}px)`]: {

@@ -74,7 +74,7 @@ const Captcha = () => {
             </Text>
             <Text size="sm" align="center" color="dimmed">
               {winner
-                ? '(You really can tell the difference? 🤔)'
+                ? '(Can you really tell the difference? 🤔)'
                 : '(She does look like a chicken nugget right?! 🍗)'}
             </Text>
           </Stack>
