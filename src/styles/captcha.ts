@@ -42,11 +42,14 @@ export const useStyles = createStyles(
 
     imagesContainer: {
       cursor: 'pointer',
-      display: 'flex',
-      justifyContent: 'space-between',
-      flexWrap: 'wrap',
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3, 1fr)',
       width: 'min(100%, 568px)',
       padding: '0.25rem 0 0.5rem',
+
+      [`@media (max-width: ${breakpoints.sm}px)`]: {
+        gridTemplateColumns: 'repeat(2, 1fr)',
+      },
     },
     captchaImg: {
       position: 'relative',
@@ -58,7 +61,7 @@ export const useStyles = createStyles(
         width: '189px',
 
         [`@media (max-width: ${breakpoints.sm}px)`]: {
-          width: '100%',
+          width: 'min(100%)',
         },
       },
     },
