@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Home } from 'pages/Home'
+import { Captcha } from 'pages/Captcha/Captcha'
 import { Layout } from 'pages/Layout'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Captcha />} />
         </Route>
       </Routes>
     </BrowserRouter>

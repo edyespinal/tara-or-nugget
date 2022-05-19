@@ -5,8 +5,20 @@ export const theme: MantineThemeOverride = {
   black: '#333',
   lineHeight: 1.65,
   colors: {
-    blue: ['#3a7adb'],
+    blue: [
+      '#3a7adb',
+      '#3a7adb',
+      '#3a7adb',
+      '#3a7adb',
+      '#3a7adb',
+      '#3a7adb',
+      '#3a7adb',
+      '#3a7adb',
+      '#3a7adb',
+      '#3a7adb',
+    ],
   },
+  primaryColor: 'blue',
   fontSizes: {
     xs: 10,
     sm: 14,
